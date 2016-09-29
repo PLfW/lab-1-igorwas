@@ -1,0 +1,112 @@
+
+header img{
+  	height: inherit;
+	float: left;
+}
+header{
+	width: 360px;
+	height: 60px;
+	margin: auto;
+	
+}
+#title{
+	line-height: 60px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+
+nav a{
+	display: inline-block;
+	margin: 5px;
+	text-decoration: none;
+	color:black;
+	background: lightgray;
+	padding: 4px;
+	border-radius: 5px;
+}
+
+.content{
+	display: inline-block;
+
+}
+aside,main{
+	float: left;
+	border:1px solid black;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 5px;
+
+}
+p{
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+
+ /*small screen*/
+@media screen and (max-width: 340px){
+	header,nav,nav a,aside{
+		width: 100%;
+	}
+	header{
+		height: 40px;
+	}
+
+	#title{
+		line-height: 40px;
+		font-size: 20px;
+
+	}
+
+	nav a{
+		display: block;
+		margin: 5px 0px;
+		background: lightgray;
+	}
+
+	.content,nav{
+		font-size: 12px;
+	}
+
+}
+ /*middle screen*/
+@media screen and (min-width: 340px),screen and (max-width: 800px){/*write and */
+	aside,main{
+		width: 98%;
+		margin: 5px 0px;
+	}
+	
+}
+ /*'large' screen*/
+@media screen and (min-width: 800px){
+	body{
+		width: 800px;
+		margin: auto;
+	}
+	aside,main{
+		margin: 5px;
+	}
+	aside{
+		width: 20%;
+	}
+	main{
+		width: 50%;
+	}
+	footer{
+		margin: 5px 20px 0px 5px;
+	}
+	
+}
+
+footer{
+	text-align: right;
+	/*border:1px solid black;
+	border-radius: 5px;*/
+	padding: 5px;
+	margin-top: 5px;
+
+}
+
+
+
